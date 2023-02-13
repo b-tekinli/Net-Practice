@@ -2,10 +2,9 @@
 
 ## Level 1
 
-Burada Interface A1 ve B1'in subnet mask'leri aynı olduğu için
-yani aynı alt ağda bulundukları için A1'in IP adresi de
-B1'in IP adresinin bulunduğu alt ağ ile aynı alt ağda
-bir IP adresi olmalıdır. Dolayısıyla eğer size verilenler
+İlk olarak bilmemiz gerekenler;
+IP adresleri ve subnet mask'ları, aygıtlar arasında ağları bölme işlevi görür. Subnet mask'ı aynı olan aygıtlar aynı alt ağa aittir ve birbirlerine direk olarak erişebilirler. Eğer subnet mask'ları farklı ise, aygıtlar farklı alt ağlarda yer alır ve birbirlerine direk olarak erişemezler. <br />
+Burada Interface A1 ve B1'in subnet mask'leri aynı olduğu için yani aynı alt ağda bulundukları için A1'in IP adresi de B1'in IP adresinin bulunduğu alt ağ ile aynı alt ağda bir IP adresi olmalıdır. Dolayısıyla eğer size verilenler
 
 **Interface B1          <br />
 IP : 104.97.23.12       <br />
@@ -37,3 +36,7 @@ Eğer sayısal hesaplama yapmak istersek olaya şu şekilde bakabiliriz: aynı a
 Buna göre diğer örneği de kendiniz yapabilirsiniz.
 
 <br />
+
+## Level 2
+
+
