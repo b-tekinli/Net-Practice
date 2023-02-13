@@ -36,7 +36,3 @@ Eğer sayısal hesaplama yapmak istersek olaya şu şekilde bakabiliriz: aynı a
 Buna göre diğer örneği de kendiniz yapabilirsiniz.
 
 <br />
-
-## Level 2
-
-
