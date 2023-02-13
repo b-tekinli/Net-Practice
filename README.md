@@ -156,3 +156,4 @@ Subnet maskler, bir IP adresinin hangi bölümünün subneti temsil ettiğini ta
 <br />
 
 
+	!! UNUTMA: Subnet mask aslında bir IP adresi olarak ağ veya ana bilgisayar bölümünü içermez. Yalnızca bilgisayarlara belirli bir IPv4 adresinde bu bölümleri nerede arayacaklarını söyler. 
