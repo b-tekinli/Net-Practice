@@ -1,6 +1,6 @@
 ## Level 1
 
-***level1 -->*** Burada Interface A1 ve B1'in subnet mask'leri aynı olduğu için
+Burada Interface A1 ve B1'in subnet mask'leri aynı olduğu için
 yani aynı alt ağda bulundukları için A1'in IP adresi de
 B1'in IP adresinin bulunduğu alt ağ ile aynı alt ağda
 bir IP adresi olmalıdır. Dolayısıyla eğer size verilenler
