@@ -37,6 +37,7 @@ Eğer sayısal hesaplama yapmak istersek olaya şu şekilde bakabiliriz: aynı a
 
 Buna göre diğer örneği de kendiniz yapabilirsiniz.
 
+
 <br />
 
 
@@ -74,7 +75,29 @@ Mask : 255.255.255.252**  <br />
 olarak belirtilmiş. Burada örnek olarak IP kısımlarına 127 ile başlayan IP adresleri verilmiş fakat 127 adresi özel bir IP adresidir. Bu adres, "localhost" veya "loopback" adı verilen bir aygıtın kendisiyle iletişim kurması için kullanılan bir adrestir. 127.0.0.1 bu adresin en sık kullanılan formudur ve bu aygıtın kendisiyle iletişim kurması için kullanılır. Dolayısıyla 127 sayısı verilen IP örneğini değiştirmeliyiz. Ben C1 için **12.0.0.1** D1 içinse **12.0.0.2** yazdım. 
 Subnet mask kısmında ise D1'in mask'ı "/30" olarak belirtilmiş bu "/30" açıklamalı olarak bir subnet mask'ın "CIDR (Classless Inter-Domain Routing) notation"u olarak adlandırılır. /30, bir IP adresinin 4 adet baytından sadece 2 baytının subnet için kullanılabileceğini gösterir. Bu da sadece 2 adet aygıtın bu subnet içinde bulunabileceğini gösterir. /30 subnet mask, WAN bağlantıları için kullanılan küçük subnetler olarak kullanılır.
 
+
 <br />
+
+
+## Level 3
+
+Bu level için verilen tüm cihazlar 1 switch'e bağlıdır. 
+
+Interface A1                <br />
+IP :  104.198.102.125       <br />
+Mask :  ?                   <br /> <br />
+Interface B1                <br />
+IP :  ?                     <br />
+Mask :  ?                   <br /> <br />
+Interface C1                <br />
+IP :  ?                     <br />
+Mask :  255.255.255.128     <br />
+
+Burada öncelikle hepsi aynı alt ağda olacağı için hepsinin subnet mask'ı aynı olmalıdır dolayısıyla A1 ve B1'in mask'larını da C1 gibi 255.255.255.128 yapmalıyız. Sonrasında A1'in IP adresi 104.198.102.125 olarak belirlendiğine göre B1'in IP adresini de ona en yakın 104.198.102.126 olarak ayarlayabiliriz. Aynı şekilde C1'in IP adresini de yine birbirlerine yakın IP adresi vermek adına 104.198.102.124 olarak ayarlayabiliriz.
+
+
+
+
 
 
 
