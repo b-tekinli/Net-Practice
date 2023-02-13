@@ -30,6 +30,10 @@ Dolayısıyla bu adresler atanmazlar, çünkü makinelere atandıklarında yanı
 
 Bunlar dışında dikkat etmemiz gereken diğer bir husus ise Interface B1'in IP adresi ile aynı olursa **KO** alırız. Bu örnekte B1'in IP adresi'nin sonunda 12 sayısı olduğu için A1'in IP adresinin sonuna (sadece bu örnekte olmak üzere) 12 girdiğimizde **KO** alırız.
 
+Eğer sayısal hesaplama yapmak istersek olaya şu şekilde bakabiliriz: aynı alt ağdaki aygıtların IP adreslerinin ilk n biti aynı olmalıdır.
+#### İlk n biti aynı olmalıdır derken ne demek istiyorum?
+Örneğin, bir aygıtın IP adresi: 192.168.1.100 ve subnet maskı 255.255.255.0 ise, bu aygıtın IP adresinin ilk 24 biti "192.168.1."dir. Bunun anlamı, bu aygıtla aynı alt ağda olan diğer tüm aygıtların IP adreslerinin de "192.168.1." ile başlaması gerektiğidir. Örneğin, diğer bir aygıtın IP adresi 192.168.1.101 olabilecektir.
+
 Buna göre diğer örneği de kendiniz yapabilirsiniz.
 
 <br />
