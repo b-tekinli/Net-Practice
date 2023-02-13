@@ -3,7 +3,7 @@
 ## Level 1
 
 İlk olarak bilmemiz gerekenler;
-IP adresleri ve subnet mask'ları, aygıtlar arasında ağları bölme işlevi görür. Subnet mask'ı aynı olan aygıtlar aynı alt ağa aittir ve birbirlerine direkt olarak erişebilirler. Eğer subnet mask'ları farklı ise, aygıtlar farklı alt ağlarda yer alır ve birbirlerine direkt olarak erişemezler. <br />
+IP adresleri ve subnet mask'ları, aygıtlar arasında ağları bölme işlevi görür. IP adresi, aygıtın ağdaki tanımlı konumunu, subnet mask ise aygıtın hangi alt ağa ait olduğunu belirleyen bir araçtır. Bunlar birbirine bağımlıdır ve birbirini tamamlar, ancak birbirini hesaplamak mümkün değildir. Subnet mask'ı aynı olan aygıtlar aynı alt ağa aittir ve birbirlerine direkt olarak erişebilirler. Eğer subnet mask'ları farklı ise, aygıtlar farklı alt ağlarda yer alır ve birbirlerine direkt olarak erişemezler. <br />
 Burada Interface A1 ve B1'in subnet mask'leri aynı olduğu için yani aynı alt ağda bulundukları için A1'in IP adresi de B1'in IP adresinin bulunduğu alt ağ ile aynı alt ağda bir IP adresi olmalıdır. Dolayısıyla eğer size verilenler
 
 **Interface B1          <br />
@@ -36,3 +36,14 @@ Eğer sayısal hesaplama yapmak istersek olaya şu şekilde bakabiliriz: aynı a
 Buna göre diğer örneği de kendiniz yapabilirsiniz.
 
 <br />
+
+
+## Level 2
+
+İlk olarak burada bilmemiz gerekenler;
+Subnet mask'ının nasıl hesaplanacağı, ağın ihtiyaçlarına göre belirlenir. Eğer ağdaki aygıtlar arasında içsel bir iletişim ihtiyacı varsa, ağı oluşturan aygıtların subnet mask'ları aynı olmalıdır. Bu durumda, ağı oluşturan aygıtların IP adreslerinin ilk n biti aynı olmalıdır.
+
+Eğer ağdaki aygıtlar arasında dışarıya açılan bağlantılar için bir sınırlama olması gerektiği varsa, subnet mask'ları farklı olabilir. Bu durumda, ağı oluşturan aygıtların IP adreslerinin ilk n biti farklı olabilir.
+
+Eğer subnet mask'ı belirsiz ise, IP adreslerine bakarak subnet mask'ı hesaplamak mümkün değildir. Bu durumda, ağ yöneticisi ya da sistem yöneticisi tarafından belirlenmelidir.
+
