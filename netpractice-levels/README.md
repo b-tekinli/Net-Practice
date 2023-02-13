@@ -1,5 +1,7 @@
 # NETPRACTICE ALIŞTIRMALARINI ÇÖZME MANTIĞI
 
+![netpractice](https://github.com/b-tekinli/Net-Practice/blob/main/net.png)
+
 ## Level 1
 
 İlk olarak bilmemiz gerekenler;
