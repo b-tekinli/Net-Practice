@@ -95,6 +95,42 @@ Mask :  255.255.255.128     <br />
 
 Burada öncelikle hepsi aynı alt ağda olacağı için hepsinin subnet mask'ı aynı olmalıdır dolayısıyla A1 ve B1'in mask'larını da C1 gibi 255.255.255.128 yapmalıyız. Sonrasında A1'in IP adresi 104.198.102.125 olarak belirlendiğine göre B1'in IP adresini de ona en yakın 104.198.102.126 olarak ayarlayabiliriz. Aynı şekilde C1'in IP adresini de yine birbirlerine yakın IP adresi vermek adına 104.198.102.124 olarak ayarlayabiliriz.
 
+Switch ise burada ağ trafiğini yöneterek verilerin doğru cihaza ulaşmasını sağlar ve aynı anda birden fazla cihaz arasında veri paylaşımına olanak tanır.
+
+
+<br />
+
+
+## Level 4
+
+Bu level için Interface A1 ve B1 switch'e bağlıdır.
+
+**Interface A1              <br />
+IP :  94.158.114.132      <br />
+Mask :  ?                 <br /> <br />
+Interface B1              <br />
+IP :  ?                   <br />
+Mask :  ?                 <br /> <br />
+Switch ise bir router'a bağlıdır ve router üzerindeki Interface'ler ise şu şekildedir:
+Interface R1              <br />
+IP :  ?                   <br />
+Mask :  ?                 <br /> <br />
+Interface R2              <br />
+IP :  94.158.114.1        <br />
+Mask :  255.255.255.128   <br /> <br />
+Interface R3              <br />
+IP :  94.158.114.244      <br />
+Mask :  255.255.255.192**   <br />
+
+Burada öncelikle bilmemiz gereken konu router'ın farklı IP adreslerine sahip cihazlar arasında veri trafiğini yönlendirir ve bunu yaparken IP adresi, mask gibi faktörleri kullanır. Aynı zamanda router ve switch birbirine bağlandığında ağ genişler ve ağın farklı alt ağlara bölünmesi sağlanır. 
+
+Burada ilk olarak tüm bilgileri verilen router'ın Interface R2 ya da Interface R3'ün IP ve mask'ına bakarak işlem yapmaya başlamamız gerekir. Ben R2 bilgilerini baz alarak yapacağım.
+
+Interface R1'in mask'ı R2'den aldığım için 255.255.255.128 olacaktır. Interface R1 direkt olarak switch ile iletişimde olduğundan A1'in de mask'ı için R1'e yazdığımız mask'ı yazmalıyız çünkü aynı alt ağda olacaklar. Sonra A1'in IP adresi belli olduğu için R1'in IP adresine ona yakın olarak 94.158.114.129 verebiliriz. B1 de A1 ile aynı alt ağda olacağı için onun da mask'ı R1 ve A1 ile aynı olacak. IP adresi ise A1'in IP adresine yakın olsun diye yine 94.158.114.130 verebiliriz.
+
+
+
+
 
 
 
