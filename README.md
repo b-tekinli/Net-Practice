@@ -134,6 +134,7 @@ IPv6 ayrıca IPv4'e göre daha güvenli, verimli ve skalabil bir adresleme siste
 
 <br />
 
+![subnet mask](https://github.com/b-tekinli/Net-Practice/blob/main/net2.png)
 
 **Subnet Mask Nedir?**
 - Subnet Mask, bir IP adresinin hangi bölümünün ana sistem (network) adresini ve hangi bölümünün host (end device) adresini belirlemede kullanılan bir adres maskelemesidir. Subnet Mask, 32-bit bir IP adresi için 8-bit ile 8-bitlik (yani genellikle 255.x.x.x gibi) bir adres maskelemesidir. Subnet Mask, ağdaki cihazlar arasındaki trafiği sınırlamak, büyük ağları daha küçük ağlara bölmek ve daha efektif IP adres yönetimi yapmak gibi amaçlarla kullanılır.
@@ -142,6 +143,7 @@ IPv6 ayrıca IPv4'e göre daha güvenli, verimli ve skalabil bir adresleme siste
 	  
 <br />
 
+![subnet](https://github.com/b-tekinli/Net-Practice/blob/main/net3.png)
 
 **Subnet Mask Nasıl Hesaplanır?**
 
