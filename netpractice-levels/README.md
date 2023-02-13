@@ -1,3 +1,5 @@
+# NETPRACTICE ALIŞTIRMALARINI ÇÖZME MANTIĞI
+
 ## Level 1
 
 Burada Interface A1 ve B1'in subnet mask'leri aynı olduğu için
@@ -14,10 +16,19 @@ Mask : 255.255.255.0**  <br />
 
 bu şekildeyse yani A1'in IP adresi soruluyorsa B1'in mask'ı ile aynı
 alt ağda bulunuyorlar mı diye kontrol etmelisiniz. Eğer ikisi de aynıysa
-ki burada ikisi de 255.255.255.0 adresinde bulnuyor bu sefer IP adreslerinde
+ki burada ikisi de 255.255.255.0 subnet maskte bulnuyor bu sefer IP adreslerinde
 ikisi de 104.97.23. kısmı tamamen aynı olmak zorunda. Tam olarak sayısal
-hesaplama yapmadan direkt B1'in IP adresinin sonu 12 olduğu için ona yakın
-bir sayı vermek adına 1 ya da 2 gibi sayılar verdiğinizde doğru sonuç alacaksınız. **--> 104.97.23.1**
+hesaplama yapmadan 0 ile 255 arasında bir sayı verdiğinizde doğru sonuç alacaksınız. **--> 104.97.23.1**
+
+Fakat bu sayı 0 ile 255 arasında olmak zorunda ama 0 ve 255 dahil değil. Bu sayıları girmeyi denediğimizde **KO** sonucunu alırız yani 1 ve 254 dahil ve bu sayılar aralığında bir sayı girersek **OK** sonucunu alırız. Örn: **--> 104.97.23.254** bu sayıyı girdiğimizde de **OK** sonucunu alırız.
+
+### Peki neden 0 ile 255 dahil değil?
+0 ve 255 network ve broadcast adresleri olarak kullanılır ve makinelere atanmaz. <br />
+***Network adresi,*** ağın tanımlanması için kullanılır. <br />
+***Broadcast adresi*** ise ağdaki tüm makinelere aynı anda veri göndermek için kullanılır. 
+Dolayısıyla bu adresler atanmazlar, çünkü makinelere atandıklarında yanıt vermeleri ve veri almaları beklenemez.
+
+Bunlar dışında dikkat etmemiz gereken diğer bir husus ise Interface B1'in IP adresi ile aynı olursa **KO** alırız. Bu örnekte B1'in IP adresi'nin sonunda 12 sayısı olduğu için A1'in IP adresinin sonuna (sadece bu örnekte olmak üzere) 12 girdiğimizde **KO** alırız.
 
 Buna göre diğer örneği de kendiniz yapabilirsiniz.
 
