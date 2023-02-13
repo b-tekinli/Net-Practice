@@ -62,5 +62,19 @@ Aynı şekilde, Interface A1 için bir IP adresi belirlemek için, 192.168.113.1
 
 Yani, Interface B1 için Mask: 255.255.255.224 ve Interface A1 için IP: 192.168.16.193 gibi bir konfigürasyon uygun olabilir.
 
+Dİğer pratilte client D ve client C için
+
+**Interface D1            <br />
+IP : ?                    <br />
+Mask : /30                <br /> <br />
+Interface C1              <br />
+IP : ?                    <br />
+Mask : 255.255.255.252**  <br />
+
+olarak belirtilmiş. Burada örnek olarak IP kısımlarına 127 ile başlayan IP adresleri verilmiş fakat 127 adresi özel bir IP adresidir. Bu adres, "localhost" veya "loopback" adı verilen bir aygıtın kendisiyle iletişim kurması için kullanılan bir adrestir. 127.0.0.1 bu adresin en sık kullanılan formudur ve bu aygıtın kendisiyle iletişim kurması için kullanılır. Dolayısıyla 127 sayısı verilen IP örneğini değiştirmeliyiz. Ben C1 için **12.0.0.1** D1 içinse **12.0.0.2** yazdım. 
+Subnet mask kısmında ise D1'in mask'ı "/30" olarak belirtilmiş bu "/30" açıklamalı olarak bir subnet mask'ın "CIDR (Classless Inter-Domain Routing) notation"u olarak adlandırılır. /30, bir IP adresinin 4 adet baytından sadece 2 baytının subnet için kullanılabileceğini gösterir. Bu da sadece 2 adet aygıtın bu subnet içinde bulunabileceğini gösterir. /30 subnet mask, WAN bağlantıları için kullanılan küçük subnetler olarak kullanılır.
+
+<br />
+
 
 
