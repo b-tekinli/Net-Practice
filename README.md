@@ -122,6 +122,15 @@ IPv6 ayrıca IPv4'e göre daha güvenli, verimli ve skalabil bir adresleme siste
 
 	Örnek olarak, 192.161.1.1 IP adresi için, subnet mask 255.255.255.0 kullanılabilir. Bu subnet mask IP adresinin ilk 3 bölümünün ağ kısmını, son bölümünün istemci kısmını belirtir. Bu durumda, IP adresi maskelenmiş olur ve 192.161.1.0/24 olarak görünecektir.
 	
+	
+	IP adreslerinin subnetting yapılması, belirli bir IP adresinin alt ağlar halinde bölünmesi amacıyla yapılan bir işlemdir. Bu işlemin matematiği, IP adreslerinin binary olarak ifade edilmesi ve binary bit düzeyinde masking yapılmasıdır.
+
+	Subnet mask, IP adresinin hangi bitlerinin ağ ID'si (network identifier), hangi bitlerinin host ID'si (host identifier) olduğunu belirler. Ağ ID'si, tüm aynı alt ağdaki cihazlar arasında aynı olmalıdır ve host ID'si ise her cihazın benzersiz olmasını sağlar.
+
+	IP adresi ve subnet mask, binary olarak AND işlemi yapılarak ağ ID'si bulunur. İşte bu noktada matematik devreye girer. IP adresinin binary formunda, subnet mask tarafından belirlenen ağ ID bitleri 1 olarak kalır ve host ID bitleri 0 olarak ayarlanır. Host ID'nin hangi bitlerinin 0 veya 1 olduğu, belirli bir alt ağa ait olduğunu gösterir.
+
+	Bu matematiksel işlem, ağ yönetimi ve yapılandırması konularında önemlidir ve ciddi bir network yapısının planlanması, yapılandırılması ve yönetilmesinde gereklidir.
+	
 
 <br />
 
