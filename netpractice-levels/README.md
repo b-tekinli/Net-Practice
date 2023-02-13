@@ -47,3 +47,18 @@ Eğer ağdaki aygıtlar arasında dışarıya açılan bağlantılar için bir s
 
 Eğer subnet mask'ı belirsiz ise, IP adreslerine bakarak subnet mask'ı hesaplamak mümkün değildir. Bu durumda, ağ yöneticisi ya da sistem yöneticisi tarafından belirlenmelidir.
 
+**Interface B1            <br />
+IP : 192.168.113.222      <br />
+Mask : ?                  <br /> <br />
+Interface A1              <br />
+IP : ?                    <br />
+Mask : 255.255.255.224**  <br />
+
+Bu level için, Interface B1 Mask'ı 255.255.255.224 olmalıdır ve Interface A1 IP adresi de 192.168.113.224 - 192.168.113.254 aralığındaki bir IP adresi olmalıdır. Bu IP adres aralığı aynı alt ağdaki diğer aygıtların IP adreslerinin aralığını belirtir ve belirlenen Mask'ın network ve host kısımlarını ayırdığı IP adres aralığını tanımlar.
+
+Aynı şekilde, Interface A1 için bir IP adresi belirlemek için, 192.168.113.192 alt ağından bir IP adresi seçebilirsiniz. Örneğin, 192.168.113.193, 192.168.113.194, 192.168.16.195 gibi. En son sayı 192 ve 222 dahil olmadan bu aralıkta olmalıdır.
+
+Yani, Interface B1 için Mask: 255.255.255.224 ve Interface A1 için IP: 192.168.16.193 gibi bir konfigürasyon uygun olabilir.
+
+
+
