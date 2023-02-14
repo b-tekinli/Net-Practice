@@ -107,10 +107,16 @@ Default route, internet'e erişim için kullanılan en son yolu belirtir. "0.0.0
 Bu level özelinde ilk olarak A1 mask'ı R1 mask'ı ile aynı olmak zorundadır. R1 IP adresi ise A1 IP adresine yakın olmalıdır. Client A routes default ve R1 IP adresini almalıdır. Router routes ise default almalıdır. Geriye sadece internet routes kalıyor o da --> **112.129.164.0/24** almalıdır. Alternatif olarak 112.129.164.0/24 yerine 0.0.0.0/0 gibi bir adres yazabilirsiniz. 0.0.0.0/0, tüm IP adreslerini kapsayan bir adrestir ve "default route" olarak da adlandırılır. Bu adres, sistemde tanımlı hiçbir başka rota bulunmadığında tüm paketlerin gönderilmesini gerektiren bir "catch-all" adresdir.
 
 
+<br />
 
 
+## Level 7
 
+Burada 2 router birbirine bağlandığından aralarında veri akışı sağlanabilir. 
 
+![level7](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level7.png)
+
+Öncelikle Client A routes kısmında default kısmı aynı kalarak IP kısmı R11'in IP adresini almalı. A1'in IP kısmı ise R11'e en yakın olan IP adresi **114.198.14.2** olabilir. Mask ise kendimiz belirleyebiliriz ben önceki levellerde gördüğüm kadarıyla **255.255.255.128** yapıyorum. Böylelikle R11 ve A1 mask'ları bu adresi alabilir. R1 routes kısmında ise yine default kısmı sabit kalabilir fakat IP kısmı R21'in IP adresini almalı. Onu da R12'den yola çıkarak **114.198.14.253** olarak en yakın IP'yi verebiliriz. R12 mask'ı ise farklı olmalı diğer bir router üzerinden bağlanacağı için. Yine önceki levellerden gördüğüm kadarıyla **255.255.255.252** yaptım. Buna bağlı olarak R21 mask'ı da aynı olmalı. Sonrasında R22 IP adresi R1 alt ağında olacağı için **114.198.14.150** yaptım. Mask olarak ise **255.255.255.192** belirledim. C1'in mask'ı da buna bağlı olarak aynı mask'ı almalı. C1 IP adresi ise R22 ile yakın olmak zorunda olduğundan  **114.198.14.151** olarak tanımladım.
 
 
 
