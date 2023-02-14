@@ -104,7 +104,7 @@ Default route, internet'e erişim için kullanılan en son yolu belirtir. "0.0.0
 
 ![level6](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level6.png)
 
-Bu level özelinde ilk olarak A1 mask'ı R1 mask'ı ile aynı olmak zorundadır. R1 IP adresi ise A1 IP adresine yakın olmalıdır. Client A routes default ve R1 IP adresini almalıdır. Router routes ise default almalıdır. Geriye sadece internet routes kalıyor o da --> **112.129.164.0/24** almalıdır. Aslında **112.129.164.0/24 ve default (0.0.0.0/0)** gibi yapılar default route olarak kullanılır ve normal şartlar altında bu adresleri kabul edilir.
+Bu level özelinde ilk olarak A1 mask'ı R1 mask'ı ile aynı olmak zorundadır. R1 IP adresi ise A1 IP adresine yakın olmalıdır. Client A routes default ve R1 IP adresini almalıdır. Router routes ise default almalıdır. Geriye sadece internet routes kalıyor o da --> **112.129.164.0/24** almalıdır. Alternatif olarak 112.129.164.0/24 yerine 0.0.0.0/0 gibi bir adres yazabilirsiniz. 0.0.0.0/0, tüm IP adreslerini kapsayan bir adrestir ve "default route" olarak da adlandırılır. Bu adres, sistemde tanımlı hiçbir başka rota bulunmadığında tüm paketlerin gönderilmesini gerektiren bir "catch-all" adresdir.
 
 
 
