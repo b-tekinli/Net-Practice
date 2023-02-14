@@ -98,7 +98,21 @@ Burada router Interface R1 A1'e, R2 ise B1'e bağlıdır. R1'in mask'ı A1'in ma
 
 ## Level 6
 
-Burada internet router'ın internet bağlantısını sağlar ve router R1 internet bağlantısından gelen paketleri ağ içindeki diğer aygıtlara yönlendirir. Router R1, switch'e bağlı Interface A1'e paketleri yönlendirir.
+Burada internet router'ın internet bağlantısını sağlar ve router R1 internet bağlantısından gelen paketleri ağ içindeki switch'e bağlı Interface A1'e paketleri yönlendirir.
+
+Default route, internet'e erişim için kullanılan en son yolu belirtir. "0.0.0.0/0" adresi de aynı şeyi ifade eder ve bu nedenle de "default route" olarak adlandırılır. Bir network tarafından internet'e ulaşmak için kullanılacak yolun belirlendiği yerde default route tanımlanır ve belirtilen yol default gateway olarak adlandırılır. Default gateway, verilerin internet'e ulaşması için gerekli olan diğer networklere yönlendirilmesi için kullanılır.
+
+![level6](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level6.png)
+
+Bu level özelinde ilk olarak A1 mask'ı R1 mask'ı ile aynı olmak zorundadır. R1 IP adresi ise A1 IP adresine yakın olmalıdır. Client A routes default ve R1 IP adresini almalıdır. Router routes ise default almalıdır. Geriye sadece internet routes kalıyor o da --> **112.129.164.0/24** almalıdır. Aslında **112.129.164.0/24 ve default (0.0.0.0/0)** gibi yapılar default route olarak kullanılır ve normal şartlar altında bu adresleri kabul edilir.
+
+
+
+
+
+
+
+
 
 
 
