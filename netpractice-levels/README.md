@@ -150,7 +150,7 @@ IP :  90.15.153.126       <br />
 Mask :  255.255.255.128   <br /> <br />
 Interface R2              <br />
 IP :  152.249.225.254     <br />
-Mask :  255.255.192.0     <br /> <br />
+Mask :  255.255.192.0**     <br /> <br />
 
 Burada router Interface R1 A1'e, R2 ise B1'e bağlıdır. R1'in mask'ı A1'in mask'ına eşit olmalıdır. IP adresi ise R1'in IP adresine yakın olmalıdır mesela **90.15.153.125** olabilir. Routes kısmı ise **default => 90.15.153.126** olmalıdır. Yani R1'in IP adresi ile aynı olmalıdır. B1 de aynı şekilde mask olarak R2'nin mask'ını almalı ve IP adresi olarak da R2'nin IP adresine yakın olacak şekilde **152.249.225.253** alabilir. Routes kısmı ise R2'nin IP adresini almalıdır.
 
