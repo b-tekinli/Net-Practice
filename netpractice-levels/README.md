@@ -72,28 +72,13 @@ Burada öncelikle hepsi aynı alt ağda olacağı için hepsinin subnet mask'ı 
 
 Bu level için Interface A1 ve B1 switch'e bağlıdır.
 
-**Interface A1            <br />
-IP :  94.158.114.132      <br />
-Mask :  ?                 <br /> <br />
-Interface B1              <br />
-IP :  ?                   <br />
-Mask :  ?                 <br /> <br />
-Switch ise bir router'a bağlıdır ve router üzerindeki Interface'ler ise şu şekildedir:
-Interface R1              <br />
-IP :  ?                   <br />
-Mask :  ?                 <br /> <br />
-Interface R2              <br />
-IP :  94.158.114.1        <br />
-Mask :  255.255.255.128   <br /> <br />
-Interface R3              <br />
-IP :  94.158.114.244      <br />
-Mask :  255.255.255.192** <br />
+![level4](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level4.png)
 
-Burada öncelikle bilmemiz gereken konu router'ın farklı IP adreslerine sahip cihazlar arasında veri trafiğini yönlendirir ve bunu yaparken IP adresi, mask gibi faktörleri kullanır. Aynı zamanda router ve switch birbirine bağlandığında ağ genişler ve ağın farklı alt ağlara bölünmesi sağlanır. 
+Burada öncelikle bilmemiz gereken konu router'ın farklı IP adreslerine sahip cihazlar arasında veri trafiğini yönlendirmesi ve bunu yaparken IP adresi, mask gibi faktörleri kullanır. Aynı zamanda router ve switch birbirine bağlandığında ağ genişler ve ağın farklı alt ağlara bölünmesi sağlanır. 
 
 Burada ilk olarak tüm bilgileri verilen router'ın Interface R2 ya da Interface R3'ün IP ve mask'ına bakarak işlem yapmaya başlamamız gerekir. Ben R2 bilgilerini baz alarak yapacağım.
 
-Interface R1'in mask'ı R2'den aldığım için 255.255.255.128 olacaktır. Interface R1 direkt olarak switch ile iletişimde olduğundan A1'in de mask'ı için R1'e yazdığımız mask'ı yazmalıyız çünkü aynı alt ağda olacaklar. Sonra A1'in IP adresi belli olduğu için R1'in IP adresine ona yakın olarak 94.158.114.129 verebiliriz. B1 de A1 ile aynı alt ağda olacağı için onun da mask'ı R1 ve A1 ile aynı olacak. IP adresi ise A1'in IP adresine yakın olsun diye yine 94.158.114.130 verebiliriz.
+Interface R1'in mask'ı R2'yi baz aldığım için 255.255.255.128 olacaktır. Interface R1 direkt olarak switch ile iletişimde olduğundan A1'in de mask'ı için R1'e yazdığımız mask'ı yazmalıyız çünkü aynı alt ağda olacaklar. Sonra A1'in IP adresi belli olduğu için R1'in IP adresine ona yakın olarak 94.158.114.130 verebiliriz. B1 de A1 ile aynı alt ağda olacağı için onun da mask'ı R1 ve A1 ile aynı olacak. IP adresi ise A1'in IP adresine yakın olsun diye yine 94.158.114.131 verebiliriz.
 
 
 <br />
@@ -103,23 +88,9 @@ Interface R1'in mask'ı R2'den aldığım için 255.255.255.128 olacaktır. Inte
 
 Bu levelde **routes** ve **default** kavramı ile tanışıyoruz. Route, bir veri paketinin bir ağdaki nihai hedefine ulaşması için izleyeceği yolu ifade eder. Örneğin, "default ->" ifadesi, veri paketinin varsayılan olarak ağdaki diğer ağlara yönlendirilmesi gerektiğini gösterir. Yönlendirme tablosundaki giriş, veri paketlerinin hangi IP adresine ve alt ağa ait olduğunun belirlenmesi için kullanılır. Yönlendirme tablosundaki çıkış, veri paketinin hangi ağ cihazına gönderilmesi gerektiğini gösterir.
 
-**Interface A1            <br />
-IP :  ?                   <br />
-Mask :  ?                 <br />
-Interface A1 : Routes --> ? ==> ? <br /> <br />
-Interface B1              <br />
-IP :  ?                   <br />
-Mask :  ?                 <br /> 
-Interface B1 : Routes --> default ==> ? <br /> <br />
-Interface A1 ve B1 bir router'a bağlıdır ve router üzerindeki Interface'ler ise şu şekildedir: <br />
-Interface R1              <br />
-IP :  90.15.153.126       <br />
-Mask :  255.255.255.128   <br /> <br />
-Interface R2              <br />
-IP :  152.249.225.254     <br />
-Mask :  255.255.192.0**   <br /> <br />
+![level5])(https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level5.png)
 
-Burada router Interface R1 A1'e, R2 ise B1'e bağlıdır. R1'in mask'ı A1'in mask'ına eşit olmalıdır. IP adresi ise R1'in IP adresine yakın olmalıdır mesela **90.15.153.125** olabilir. Routes kısmı ise **default => 90.15.153.126** olmalıdır. Yani R1'in IP adresi ile aynı olmalıdır. B1 de aynı şekilde mask olarak R2'nin mask'ını almalı ve IP adresi olarak da R2'nin IP adresine yakın olacak şekilde **152.249.225.253** alabilir. Routes kısmı ise R2'nin IP adresini almalıdır.
+Burada router Interface R1 A1'e, R2 ise B1'e bağlıdır. R1'in mask'ı A1'in mask'ına eşit olmalıdır. IP adresi ise R1'in IP adresine yakın olmalıdır mesela **90.15.153.125** olabilir. Routes kısmı ise **default => 90.15.153.126** olmalıdır. Yani R1'in IP adresi ile aynı olmalıdır sebebi ise ona yönlendirme yapmalıdır. B1 de aynı şekilde mask olarak R2'nin mask'ını almalı ve IP adresi olarak da R2'nin IP adresine yakın olacak şekilde **152.249.225.253** alabilir. Routes kısmı ise R2'nin IP adresini almalıdır.
 
 
 <br />
