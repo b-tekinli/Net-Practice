@@ -88,7 +88,7 @@ Interface R1'in mask'ı R2'yi baz aldığım için 255.255.255.128 olacaktır. I
 
 Bu levelde **routes** ve **default** kavramı ile tanışıyoruz. Route, bir veri paketinin bir ağdaki nihai hedefine ulaşması için izleyeceği yolu ifade eder. Örneğin, "default ->" ifadesi, veri paketinin varsayılan olarak ağdaki diğer ağlara yönlendirilmesi gerektiğini gösterir. Yönlendirme tablosundaki giriş, veri paketlerinin hangi IP adresine ve alt ağa ait olduğunun belirlenmesi için kullanılır. Yönlendirme tablosundaki çıkış, veri paketinin hangi ağ cihazına gönderilmesi gerektiğini gösterir.
 
-![level5])(https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level5.png)
+![level5](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level5.png)
 
 Burada router Interface R1 A1'e, R2 ise B1'e bağlıdır. R1'in mask'ı A1'in mask'ına eşit olmalıdır. IP adresi ise R1'in IP adresine yakın olmalıdır mesela **90.15.153.125** olabilir. Routes kısmı ise **default => 90.15.153.126** olmalıdır. Yani R1'in IP adresi ile aynı olmalıdır sebebi ise ona yönlendirme yapmalıdır. B1 de aynı şekilde mask olarak R2'nin mask'ını almalı ve IP adresi olarak da R2'nin IP adresine yakın olacak şekilde **152.249.225.253** alabilir. Routes kısmı ise R2'nin IP adresini almalıdır.
 
