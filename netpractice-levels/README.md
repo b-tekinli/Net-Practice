@@ -155,4 +155,18 @@ Mask :  255.255.192.0**   <br /> <br />
 Burada router Interface R1 A1'e, R2 ise B1'e bağlıdır. R1'in mask'ı A1'in mask'ına eşit olmalıdır. IP adresi ise R1'in IP adresine yakın olmalıdır mesela **90.15.153.125** olabilir. Routes kısmı ise **default => 90.15.153.126** olmalıdır. Yani R1'in IP adresi ile aynı olmalıdır. B1 de aynı şekilde mask olarak R2'nin mask'ını almalı ve IP adresi olarak da R2'nin IP adresine yakın olacak şekilde **152.249.225.253** alabilir. Routes kısmı ise R2'nin IP adresini almalıdır.
 
 
+<br />
+
+
+## Level 6
+
+Burada internet router'ın internet bağlantısını sağlar ve router R1 internet bağlantısından gelen paketleri ağ içindeki diğer aygıtlara yönlendirir. Router R1, switch'e bağlı Interface A1'e paketleri yönlendirir.
+
+
+
+
+
+
+
+
 
