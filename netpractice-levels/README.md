@@ -140,5 +140,10 @@ Bu levelde diğer levellerden farklı olarak bir internetin 3 farklı routes'ı 
 Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir ağ cihazıdır. Yani aslında router'ın diğer adı gateway diyebiliriz. 
 
 
- 
+
+
+
+
+
+
 
