@@ -16,6 +16,7 @@ Levels --> [Solutions](https://github.com/b-tekinli/Net-Practice/tree/main/netpr
 
 <br />
 
+## Konular
 
 **Ağ Yapılandırması Nedir?**
 - Ağ üzerindeki cihazların doğru bir şekilde yapılandırılması ve konfigüre edilmesi ile sağlanır. Bir ya da daha fazla cihazın bağlantısı ile oluşur ve bu cihazlar arasında veri paylaşmasını veya iletişimi sağlar.
