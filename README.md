@@ -10,6 +10,13 @@ Bu proje, nasıl ağ oluşturulur, bir ağ nasıl yapılandırılır, ağ üzeri
 <br />
 
 
+## LEVELS SOLVED
+[levels](https://github.com/b-tekinli/Net-Practice/tree/main/netpractice-levels)
+
+
+<br />
+
+
 **Ağ Yapılandırması Nedir?**
 - Ağ üzerindeki cihazların doğru bir şekilde yapılandırılması ve konfigüre edilmesi ile sağlanır. Bir ya da daha fazla cihazın bağlantısı ile oluşur ve bu cihazlar arasında veri paylaşmasını veya iletişimi sağlar.
 
