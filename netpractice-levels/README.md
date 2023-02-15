@@ -126,7 +126,9 @@ Burada 2 router birbirine bağlandığından aralarında veri akışı sağlanab
 
 Burada bir router üzerinde 2 fealt ve routes girişi bulunmaktadır. Her bir default ve routes girişi, router tarafından yönetilen aygıtlardan birine gönderilen verilerin hangi IP adresine gitmesi gerektiğini belirler.
 
+![level8](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level8.png)
 
+Burada önce en alttaki D1 ve C1 ile başlamak mantıklı olacaktır. D1'in ve R12'nin mask'ı **255.255.255.240** olduğundan C1, R22, R23, R21 ve R13'ün maskları da aynı olmalıdır. R2 routes default kısmı sabit kalmalı IP'si ise belli olduğundan C1 IP adresine **139.209.40.18** vermeyi tercih ettim. R22 IP adresine de C1 ile veri alışverişi yapacağı için ve aynı alt ağda olmaları gerektiğinden ona en yakın olan **139.209.40.17** adresini verdim. Client C ise default kısmı sabit kalmalı IP adresi ise R22 IP adresini almalı. R23 IP adresine de yine yakın bir IP vermek için **139.209.40.1** verdim. Bu IP adresi aynı zamanda Client D'nin default kısmı sabit kalarak IP kısmına yazılmalıdır. D1 IP adresine ise R23'e yakın olması için **139.209.40.2** verebiliriz. 
 
 
 
