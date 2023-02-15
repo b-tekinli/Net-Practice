@@ -11,7 +11,7 @@ Bu proje, nasıl ağ oluşturulur, bir ağ nasıl yapılandırılır, ağ üzeri
 
 
 ## LEVELS SOLVED
-[levels](https://github.com/b-tekinli/Net-Practice/tree/main/netpractice-levels)
+Levels --> [Solutions](https://github.com/b-tekinli/Net-Practice/tree/main/netpractice-levels)
 
 
 <br />
