@@ -139,6 +139,8 @@ Burada Internet ağının routes kısmında verilen IP'yi direkt olarak R1 route
 Bu levelde diğer levellerden farklı olarak bir internetin 3 farklı routes'ı olması karşımıza çıkıyor. Bir internetin üç tane routes'ı olması, bu internetin farklı yollarla farklı ağlara erişebileceği anlamına gelir. Router'lar, bir ağa erişmek için birden fazla yolu kullanabilirler ve her yol farklı bir route ile belirtilir. İnternet üzerindeki ağlar ve cihazlar, route tablosunu kullanarak hedef ağlara ulaşmak için hangi yolun kullanılacağını belirlerler. Bir internetin üç farklı routes'ı olması, farklı gateway'ler aracılığıyla farklı ağlara erişebileceği anlamına gelir.
 Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir ağ cihazıdır. Yani aslında router'ın diğer adı gateway diyebiliriz. 
 
+![level9](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level9.png)
+
 
 
 
