@@ -148,4 +148,3 @@ Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir a�
 
 
 
-
