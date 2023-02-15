@@ -122,7 +122,7 @@ Burada 2 router birbirine bağlandığından aralarında veri akışı sağlanab
 <br />
 
 
-# Level 8
+## Level 8
 
 Burada bir router üzerinde 2 fealt ve routes girişi bulunmaktadır. Her bir default ve routes girişi, router tarafından yönetilen aygıtlardan birine gönderilen verilerin hangi IP adresine gitmesi gerektiğini belirler.
 
@@ -131,7 +131,13 @@ Burada bir router üzerinde 2 fealt ve routes girişi bulunmaktadır. Her bir de
 Burada Internet ağının routes kısmında verilen IP'yi direkt olarak R1 routes kısmına yazabiliriz ve Internet ağının IP kısmmına R12 IP adresini yazmalıyız. R1'in IP kısmına ise default kısmına yakın bir IP verebiliriz. R13 ise yine R1 IP'sinin en yakını olarak **139.209.40.62** alabilir. D1'in ve R12'nin mask'ı **255.255.255.240** olduğundan diğer tüm aygıtların da maskları aynı olabilir. R2 routes default kısmı sabit kalmalı IP'si ise belli olduğundan C1 IP adresine **139.209.40.18** vermeyi tercih ettim. R22 IP adresine de C1 ile veri alışverişi yapacağı için ve aynı alt ağda olmaları gerektiğinden ona en yakın olan **139.209.40.17** adresini verdim. Client C ise default kısmı sabit kalmalı IP adresi ise R22 IP adresini almalı. R23 IP adresine de yine yakın bir IP vermek için **139.209.40.1** verdim. Bu IP adresi aynı zamanda Client D'nin default kısmı sabit kalarak IP kısmına yazılmalıdır. D1 IP adresine ise R23'e yakın olması için **139.209.40.2** verebiliriz. 
 
 
+<br />
 
+
+## Level 9
+
+Bu levelde diğer levellerden farklı olarak bir internetin 3 farklı routes'ı olması karşımıza çıkıyor. Bir internetin üç tane routes'ı olması, bu internetin farklı yollarla farklı ağlara erişebileceği anlamına gelir. Router'lar, bir ağa erişmek için birden fazla yolu kullanabilirler ve her yol farklı bir route ile belirtilir. İnternet üzerindeki ağlar ve cihazlar, route tablosunu kullanarak hedef ağlara ulaşmak için hangi yolun kullanılacağını belirlerler. Bir internetin üç farklı routes'ı olması, farklı gateway'ler aracılığıyla farklı ağlara erişebileceği anlamına gelir.
+Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir ağ cihazıdır. Yani aslında router'ın diğer adı gateway diyebiliriz. 
 
 
 
