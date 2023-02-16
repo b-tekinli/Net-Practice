@@ -141,6 +141,14 @@ Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir a�
 
 ![level9](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level9.png)
 
+İlk olarak internet IP'leri, R12 IP ve mask'ı belli olduğu için o kısımdan başlamak mantıklı. İnternetin 3 girişi var ilki **163.12.250./** IP'sinden gelen verileri almak için, ikincisi Clien C için diğeri zaten default. Burada R11'i **163.12.250.1** olarak belirleyebiliriz mask'ı zaten belli olduğu için B1 mask'ına da aynı mask adresini yazmalıyız. B1 IP adresini ise en yakın IP olması için **163.12.250.1** belirleyebiliriz. 
+
+
+
+
+
+
+
 
 
 
