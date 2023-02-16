@@ -142,3 +142,19 @@ Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir a�
 ![level9](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level9.png)
 
 İlk olarak internet IP'leri, R12 IP ve mask'ı belli olduğu için o kısımdan başlamak mantıklı. İnternetin 3 girişi var ilki **163.12.250./** IP'sinden gelen verileri almak için, ikincisi Clien C için diğeri zaten default. Burada R11'i **163.12.250.1** olarak belirleyebiliriz mask'ı zaten belli olduğu için B1 mask'ına da aynı mask adresini yazmalıyız. B1 IP adresini ise en yakın IP olması için **163.12.250.2** belirleyebiliriz. Client B routes için default kalarak IP ise R11 ile iletişimde olacağı için onun IP'sini almalı. Client A da aynı şekilde. R21 mask'ı belli olduğu için onun mask'ını R13 için yazabiliriz. R13 IP adresi ise R11 ve R12 alt ağında bulunacağından **163.172.250.253** olabilir. R21 IP adresi ise R13'e yakın olması gerektiğinden **163.172.250.254** verilebilir. Client D routes default kalabilir IP ise zaten verilmiş o yüzden D1 IP adresini ona yakın olacak şekilde **57.137.207.161** verebiliriz. Mask'ı da R21'den gelen mask olmalı. R22 ve C1'in mask'ları da aynı olmalı. R23 IP adresi Client D'nin IP adresi olmalı. R22 ve Client C IP adresi aynı olacağından ikisine de **9.0.0.254** verebiliriz. C1'e de onlara en yakın olacak şekilde **9.0.0.253** verebiliriz. Router R2 direkt olarak R13 IP adresini almalı. Geriye sadece R1 routes girişleri kalıyor onun da hem **9.0.0.252/30** girişi hem de Client D üzeriden gelen IP girişi ve default girişi mevcut. IP kısımları ise R21 üzerinden alınıyor.
+
+
+<br />
+
+
+## Level 10
+
+![level10](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level10.png)
+
+
+
+
+
+
+
+
