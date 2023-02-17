@@ -130,7 +130,7 @@ Burada 2 router birbirine bağlandığından aralarında veri akışı sağlanab
 
 ## Level 8
 
-Burada bir router üzerinde 2 fealt ve routes girişi bulunmaktadır. Her bir default ve routes girişi, router tarafından yönetilen aygıtlardan birine gönderilen verilerin hangi IP adresine gitmesi gerektiğini belirler.
+Burada bir router üzerinde 2 default ve routes girişi bulunmaktadır. Her bir default ve routes girişi, router tarafından yönetilen aygıtlardan birine gönderilen verilerin hangi IP adresine gitmesi gerektiğini belirler.
 
 ![level8](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level8.png)
 
