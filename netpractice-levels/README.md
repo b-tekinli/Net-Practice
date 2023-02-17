@@ -102,6 +102,12 @@ Burada internet router'ın internet bağlantısını sağlar ve router R1 intern
 
 Default route, internet'e erişim için kullanılan en son yolu belirtir. "0.0.0.0/0" adresi de aynı şeyi ifade eder ve bu nedenle de "default route" olarak adlandırılır. Bir network tarafından internet'e ulaşmak için kullanılacak yolun belirlendiği yerde default route tanımlanır ve belirtilen yol default gateway olarak adlandırılır. Default gateway, verilerin internet'e ulaşması için gerekli olan diğer networklere yönlendirilmesi için kullanılır.
 
+Bunlar dışında bilinmesi gereken IP adresleri farkı var. 112.129.164.0/24 ve 112.129.164.0/31 farklı subnetleri temsil ederler.
+
+112.129.164.0/24, IP adresleri 112.129.164.0 ile 112.129.164.255 arasındaki tüm IP adreslerini kapsayan bir subnettir. Burada ilk 24 bit ağ ID'si, son 8 bit ise host ID'si olarak kullanılır. Bu nedenle 112.129.164.0/24 subnetinde 256 tane IP adresi kullanılabilir.
+
+112.129.164.0/31 ise IP adresleri 112.129.164.0 ve 112.129.164.1'i içeren bir subnettir. Burada ilk 31 bit ağ ID'si, son 1 bit ise host ID'si olarak kullanılır. Bu nedenle 112.129.164.0/31 subnetinde sadece 2 tane IP adresi kullanılabilir. Bu subnet tipi genellikle noktadan noktaya bağlantılar (point-to-point) gibi küçük ağlarda kullanılır.
+
 ![level6](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level6.png)
 
 Bu level özelinde ilk olarak A1 mask'ı R1 mask'ı ile aynı olmak zorundadır. R1 IP adresi ise A1 IP adresine yakın olmalıdır. Client A routes default ve R1 IP adresini almalıdır. Router routes ise default almalıdır. Geriye sadece internet routes kalıyor o da --> **112.129.164.0/24** almalıdır. Alternatif olarak 112.129.164.0/24 yerine 0.0.0.0/0 gibi bir adres yazabilirsiniz. 0.0.0.0/0, tüm IP adreslerini kapsayan bir adrestir ve "default route" olarak da adlandırılır. Bu adres, sistemde tanımlı hiçbir başka rota bulunmadığında tüm paketlerin gönderilmesini gerektiren bir "catch-all" adresdir.
