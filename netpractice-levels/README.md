@@ -151,8 +151,8 @@ Gateway ise bir ağdaki cihazların başka bir ağa erişmesini sağlayan bir a�
 
 ![level10](https://github.com/b-tekinli/Net-Practice/blob/main/level-assets/level10.png)
 
-
-
+En bastan başlayarak internet kısmından ilerlenmeli. R1 kısmında IP adresleri hep **155.135.157./** olarak verilmiş bu yüzden internet routes kısmına **155.135.157.0/24** bu ayarda bir adres vermemiz yanlış olmaz. Aynı zamanda R1'in de ilk girişi için bunu verebiliriz. H21 için R11'in IP adresine yakın bir IP olarak **155.135.157.3** adresini verebiliriz. Mask'ı da aynı şekilde R11'in mask'ını almalı. H11 mask'ı da aynı şekilde olmalı. R13 ise R21'de mask **255.255.255.252** olarak verilmiş o yüzden aynısını girmeliyiz. R23'ün IP adresi R21'e yakın ayarda olacak şekilde **155.135.157.129** adresi verilebilir mask'ı ise H41'in mask'ı **255.255.255.192** adresi olduğundan aynısı olmalıdır. R22 ve H31 mask'ı diğerleriyle aynı mask'a sahip olmamalı hatta özel bir subnet mask olan **255.255.255.224** adresini almalıdır. Bu mask, 32 bitlik IPv4 adreslerinde son 5 biti ayrılmış bir subnet bölümü olarak kullanır. Bu, 30 tane 32 IP adresli subnet oluşturulmasına olanak tanır. R22 ve H31 IP adresleri ise birbirlerine yakın olma anlamında **155.135.157.195** ve **155.135.157.196** olabilir. Client H3 ise R22 ile bağlandığından onun IP adresini alır.
+ 
 
 
 
