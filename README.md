@@ -550,3 +550,118 @@ Proxy sunucular güvenliğiniz için sanal ortamda bir güvenlik katmanı oluşt
 
 Proxy kullanarak engellenmiş sitelere girebilir, internette daha hızlı ve güvenli dolaşabilirsiniz. Bazı Proxy’lerin amacı internette kimliği gizlemekten ziyade filtreleme/zararlı sitelere girişi engelleme ya da bant genişliğinden tasarruf ederek veri akışını hızlandırmaktır.
 
+# NETPRACTICE
+
+![net](https://geekflare.com/wp-content/uploads/2021/12/wifirouter.png)
+
+Bu proje, nasıl ağ oluşturulur, bir ağ nasıl yapılandırılır, ağ üzerinde veri transferi nasıl yapılır ve ağ güvenliği nasıl sağlanırı anlatmayı amaçlayan bir projedir. Ağ yapılandırma, ağ protokolleri, cihaz yapılandırması, güvenlik yapılandırması gibi temel ağ konularını içerir.
+
+***Küçük ölçekli ağları yapılandırmak için, TCP/IP adreslemenin nasıl çalıştığını anlamak gerekecektir.***
+
+
+<br />
+
+
+## LEVELS SOLVED
+Levels --> [Solutions](https://github.com/b-tekinli/Net-Practice/tree/main/netpractice-levels)
+
+
+<br />
+
+## Konular
+
+**Ağ Yapılandırması Nedir?**
+- Ağ üzerindeki cihazların doğru bir şekilde yapılandırılması ve konfigüre edilmesi ile sağlanır. Bir ya da daha fazla cihazın bağlantısı ile oluşur ve bu cihazlar arasında veri paylaşmasını veya iletişimi sağlar.
+
+
+<br />
+
+
+**Ağ Protokolleri Nelerdir?**
+- Bir ağ üzerindeki cihazlar arasında veri transferi yaparken kullanılan standart kurallar ve prosedürlerdir. Ağ üzerindeki cihazlar arasındaki iletişimi, veri transferini ve güvenli bir şekilde çalışmasını sağlar. 
+    - Bazı işlevleri:
+    	1. Veri Paketleme: Verilerin ağ üzerinde gönderilebilmesi için paketlenmesi veya bölünmesi.
+    	2. Adresleme: Her bir ağ cihazının benzersiz bir IP adresine sahip olması ve bu adresleme ile verilerin yönlendirilmesi.
+    	3. Veri Transferi: Verilerin ağ üzerinde güvenli ve verimli bir şekilde transfer edilmesi.
+    	4. Hata Düzeltme: Verilerin ağ üzerinde gönderilirken oluşabilecek hataların düzeltilmesi.
+    	5. Güvenlik: Ağ üzerindeki verilerin güvenliğinin sağlanması.
+
+    - Ağ protokolleri arasında TCP/IP, HTTP, FTP, SMTP gibi protokoller bulnur. Her ağ protokolü belirli bir ağa uygulanması için tasarlanır ve farklı işlevlere sahiptir. Örnek olarak, HTTP ağ üzerindeki web sayfalarının görüntülenmesini sağlar, FTP ise dosya transferi için kullanılır.
+    
+
+<br />
+
+
+**Cihaz Yapılandırması Nedir?**
+- Cihazın fiziksel veya sanal olarak nasıl çalışması gerektiğini, nasıl bağlanması gerektiğini, hangi ayarların yapılması gerektiğini içerir.
+	1. Cihaz Bağlantısı: Cihazın fiziksel ya da sanal olarak ağa bağlanması gerekir.
+	2. Ayarların Yapılması: Cihazın IP adresi, alt ağ maskesi, varsa DNS sunucusu gibi ayarların yapılması gerekir. (DNS: internette bulunan web sitelerinin ve diğer hizmetlerin adreslerini kolayca kullanılabilir hale getirmek için kullanılan bir sistemdir. DNS, web sitelerinin IP adreslerini alfabetik olarak anılan domain (alan) adlarına çevirir ve bu adresleri kullanıcıların tarayıcılarına gösterir. Bu sayede kullanıcılar, domain adlarını hatırlamaya çalışmak yerine, web sitelerine direkt olarak adres girebilirler.)
+	3. Güvenlik Ayarları: Cihazın güvenliğinin sağlanması için gerekli olan ayarların yapılması gerekir, örneğin parola ayarları.
+	4. İşlevsel Ayarlar: Cihazın nasıl çalışması gerektiğine dair ayarların yapılması gerekir, örneğin firewall ayarları ve dosya paylaşım ayarları.
+	5. Yapılandırmanın Kaydedilmesi: Ayarlar yapıldıktan sonra cihazın yapılandırmasının kaydedilmesi gerekir.
+
+
+<br />
+
+
+**Güvenlik duvarı yapılandırması nasıl olur?**
+- Bir ağın giriş ve çıkışını kontrol eden ve güvenliğini sağlamaya yarayan bir yazılımdır. Güvenlik duvarı yapılandırması, belirli kurallar belirlenerek yapılır ve bu kurallar belirli trafiklerin ağa erişimini veya ağ dışına çıkmasını kontrol eder. Bu kurallar, belirli IP adreslerine veya hizmetlere (örneğin, HTTP veya FTP gibi) giriş yasağı, belirli IP adreslerinden gelen trafiğin bloklanması veya sadece belirli IP adreslerine güvenli bir şekilde erişim izni verilmesi gibi farklı durumları kapsayabilir. Güvenlik duvarı yapılandırmasını yapmak için bir yönetici tarafından ağın ve güvenliğin ihtiyaçlarının doğru bir şekilde anlaşılması ve güvenlik duvarı yazılımının kullanımı gereklidir.
+
+
+<br />
+
+
+**TCP/IP Nedir?**
+- İnternet ve diğer ağlar arasında veri aktarımı için kullanılan bir standarttır. 
+	TCP, verilerin doğru ve eksiksiz bir şekilde alıcıya ulaşmasını sağlar. Bu, verilerin ağ üzerinde parçalara ayrılması ve her parçanın alıcıya tek tek gönderilmesi, alıcı tarafından onaylanması ve eksik olan verilerin tekrar gönderilmesi gibi bir dizi adımı içerir.
+	
+	IP ise, verilerin ağ üzerinde nasıl yolculuk ettiğini belirler. Bu, verilerin belirli bir yere gönderilmesi ve belirli bir yerden başka bir yere aktarılması gibi işlemleri içerir.
+	
+	TCP/IP protokol grubu, internet ve diğer büyük ağlar arasında veri aktarımı için kullanılan en yaygın protokol grubudur ve bu ağların çalışması için vazgeçilmez bir öğedir.
+
+
+<br />
+
+
+**Adresleme Nedir?**
+- Ağ üzerindeki cihazların birbirlerini tanıması ve verilerin doğru yerlere gönderilmesi için kullanılan bir yapıdır. Bu yapı, her ağ cihazına benzersiz bir adres atamasını içerir. Bu adres, IP (Internet Protocol) adresi olarak adlandırılır ve verilerin ağ üzerindeki yolculuğunu ve varış noktasını tanımlar.
+  
+  Ağ adresleme, ağlar arasında verilerin doğru şekilde yönlendirilmesini ve doğru alıcıya ulaşmasını sağlar. Bu, cihazlar arasındaki veri aktarımının hızlı, güvenli ve eksiksiz olmasını garantiler.
+  
+  Ağ adresleme, IPv4 ve IPv6 gibi farklı protokoller tarafından desteklenir ve her protokol benzersiz bir adresleme sistemi kullanır. Örneğin, IPv4 32 bitlik bir adresleme sistemi kullanırken, IPv6 128 bitlik bir adresleme sistemi kullanır.
+ 
+ 
+<br />
+  
+
+**IPv4 ve IPv6 Arasındaki Farklar Nelerdir?**
+    
+IPv4, 32 bitlik bir adresleme sistemi kullanır ve 4 adet 8 bitlik oktetten oluşur. Bu, toplamda 2^32 (yaklaşık 4.3 milyar) benzersiz IP adresi sağlar. Ancak, giderek artan internet kullanımı nedeniyle IPv4 adres stokları tükenmeye başladı.
+    
+IPv6 ise 128 bitlik bir adresleme sistemi kullanır ve 8 adet 16 bitlik hextetten oluşur. Bu, toplamda 2^128 (yaklaşık 340 undecillion) benzersiz IP adresi sağlar. Bu sayı, IPv4 adres sayısından çok daha fazladır ve internet kullanımının uzun süreli büyümesi için yeterli bir stok sağlar.
+    
+IPv6 ayrıca IPv4'e göre daha güvenli, verimli ve skalabil bir adresleme sistemi sunar. IPv6, IPv4'e göre daha geniş bir adres alanı, daha hızlı veri transferi, daha az paket güncellemesi gereksinimi ve daha kolay yapılandırma gibi avantajlar sağlar.
+
+
+<br />
+
+
+**Router Nedir?**
+- Ağlar üzerinde çalışan ağ protokollerini kullanarak cihazlar arasında veri yönlendirme işlemlerini yapar ve bu sayede verilerin doğru yerlere gönderilmesini sağlar.
+
+
+<br />
+
+
+**Switch Nedir?**
+- Ağdaki tüm cihazlar arasında veri paylaşımını veya internet bağlantısını sağlamak için kullanılabilir. Switch, ağdaki cihazların MAC adreslerine göre verilerini yönlendirir ve bu sayede verilerin doğru cihaza gitmesini sağlar. Switch, ağdaki cihazlar arasındaki veri trafiğini yönetir ve ağın verimliliğini ve hızını artırır. Aynı zamanda switch, ağdaki cihazlar arasındaki güvenliği artırır ve ağın yapısını düzenler.
+
+
+<br />
+
+
+**Interface Nedir?**
+- Cihazlar arasında veri aktarımını, mesajlaşmayı ve kullanıcıların cihazlar arasında veri görüntülemesini ve yönetmesini sağlar. 
+
+
+<br />
