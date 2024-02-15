@@ -237,8 +237,8 @@ CIDR dan önce ip aralıkları aşağıdaki gibi 3 sınıfa ayrılmıştı ???
 
 Özel ip adresleri localde kullanılabilir fakat internete yönlendirilemiyor, internet servis sağlayıcıları tarafından bu ip adresleri bloklanıyor. 
 
-[link](https://www.aelius.com/njh/subnet_sheet.html)
-[link](https://tr.ipshu.com/ipv4/127.0.0.0)
+[Subnet Mask Cheat Sheet](https://www.aelius.com/njh/subnet_sheet.html)
+[127.0.0.0 nedir?](https://tr.ipshu.com/ipv4/127.0.0.0)
 
 IPv4 ayrılmış adresleri:
 
@@ -502,10 +502,9 @@ Bu katmanda kullanılan önemli protokoller şunlardır:
 
 <br>
 <br>
-ustaa
-<br>
 <br>
 
+## statik routing
 
 ![image](https://github.com/mtalhaaygen/Net-Practice/assets/63591196/682953a9-ff58-46b8-98bb-7a36c416d55c)
 
